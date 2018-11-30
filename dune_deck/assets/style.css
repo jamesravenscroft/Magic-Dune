@@ -1,0 +1,1109 @@
+/*Main CSS from Nissa Card files*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+---------------------------
+---------------------------
+*/
+@font-face {
+  font-family: 'MPlantin';
+  src: url("../fonts/mplantin.eot?v=1.3.1");
+  src: url("../fonts/mplantin.eot?#iefix&v=1.3.1") format("embedded-opentype"), url("../fonts/mplantin.woff?v=1.3.1") format("woff"), url("../fonts/mplantin.ttf?v=1.3.1") format("truetype"), url("../fonts/mplantin.svg?v=1.3.1#mplantin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-family: "MPlantin"; 
+}
+
+.card-container {
+  max-width: 500px;
+  height: 700px;
+  margin: 0 auto;
+  background: #171314;
+  margin-top: 56px;
+  border-radius: 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: -8px 9px 16px -3px gray;
+  box-shadow: -8px 9px 16px -3px gray; }
+
+.card-background {
+  -ms-flex-preferred-size: 80%;
+  flex-basis: 80%;
+  height: 595px;
+  margin: 20px 20px 0 20px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+  background-image: url(../assets/images/green-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 0; }
+
+.card-frame {
+  z-index: 1;
+  position: relative;
+  height: 108%;
+  max-width: 97%;
+  left: 1%;
+  top: 0.5%;
+  left: 1.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.frame-header,
+.frame-type-line {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(201, 216, 201, 0.3)), to(rgba(201, 216, 209, 0.3))), url(../assets/images/tile-bg-1.jpg);
+  background: linear-gradient(0deg, rgba(201, 216, 201, 0.3), rgba(201, 216, 209, 0.3)), url(../assets/images/tile-bg-2.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 8px 0;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 18px/40px; }
+
+.name,
+.type {
+  font-size: 1.3em;
+  margin-left: 10px;
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
+  font-weight: 600; }
+
+#mana-icon {
+  font-size: 1.4em;
+  background: #ADD3AC;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: -0.05em 0.12em 0px 0 black;
+  box-shadow: -0.05em 0.12em 0px 0 black;
+  margin-right: 5px;
+  height: 20px;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.frame-art {
+  height: 50%;
+  margin: 0 10px; }
+
+#set-icon {
+  height: 9%;
+  width: 6%;
+  overflow: hidden;
+  margin-right: 10px;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.frame-type-line {
+  margin-top: 0; }
+
+.frame-text-box {
+  margin: 0 10px;
+  background: #d3ded6;
+  background-image: url(../assets/images/tile-bg-2.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 50px 6px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.2em; }
+
+.flavour-text {
+  font-style: italic;
+  padding: 10px 0; }
+
+p {
+  margin-bottom: 5px; }
+
+.ftb-inner-margin {
+  margin: 5px 1px; }
+
+.frame-bottom-info {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 5px 15px 0 15px; }
+
+.frame-bottom-info img {
+  overflow: hidden;
+  max-width: 10px; }
+
+.fbi-left {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.fbi-left p:first-of-type {
+  margin-bottom: 1px; }
+
+.fbi-right {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: right; }
+
+.fbi-left,
+.fbi-right {
+  font-size: 10px;
+  position: relative;
+  top: 6px; }
+
+.fbi-center {
+  border-radius: 60%;
+  -ms-flex-preferred-size: 41px;
+  flex-basis: 41px;
+  height: 21px;
+  position: relative;
+  bottom: 11px;
+  z-index: 2;
+  background: lightgray;
+  background-image: url(../assets/images/holofoil-texture2.jpg);
+  -webkit-box-shadow: 0 0 0 4px #171314;
+  box-shadow: 0 0 0 4px #171314; }
+
+.inner-margins {
+  margin: 0 10px; }
+
+/*
+    -------------------------
+    -------------------------
+            BORDERS
+    -------------------------
+    -------------------------
+*/
+.frame-header,
+.frame-type-line {
+  border-bottom: 4px solid #a9a9a9;
+  border-left: 2px solid #a9a9a9;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff; }
+
+.frame-header,
+.frame-art,
+.frame-type-line {
+  -webkit-box-shadow: 0 0 0 2px #171314, 0 0 0 5px #26714A, -3px 3px 2px 5px #171314;
+  box-shadow: 0 0 0 2px #171314, 0 0 0 5px #26714A, -3px 3px 2px 5px #171314;
+  margin-bottom: 7px; }
+
+.frame-text-box {
+  -webkit-box-shadow: 0 0 0 5px #26714A, -3px 3px 2px 5px #171314;
+  box-shadow: 0 0 0 5px #26714A, -3px 3px 2px 5px #171314; }
+
+/*
+    ----------------------
+    ----------------------
+            OVERFLOW
+    ----------------------
+    ----------------------
+*/
+.frame-header,
+.frame-type-line,
+.frame-text-box {
+  overflow: hidden; }
+
+ 
+
+
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;			
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	50%{
+		transform: translateY(-8%);
+	}
+	65%{
+		transform: translateY(4%);
+	}
+	80%{
+		transform: translateY(-4%);
+	}
+	95%{
+		transform: translateY(2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}	
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	50%{
+		-webkit-transform: translateY(-8%);
+	}
+	65%{
+		-webkit-transform: translateY(4%);
+	}
+	80%{
+		-webkit-transform: translateY(-4%);
+	}
+	95%{
+		-webkit-transform: translateY(2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+/********FADE IN(+)(+)(+)(+)(+)(+(+)(+)(+)(+)(+)(+)(+)(+)(+)(+)(+)(+)(+)(+)(+)(+)(+)
+*/
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}		
+}
+/*** Delay Attempt ******
+.fadeInDelay {
+    animation-delay: 2s;
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+
+/*end opacity */
+
+
+
+/*
+==============================================
+bigEntrance
+==============================================
+*/
+
+
+.bigEntrance{
+	animation-name: bigEntrance;
+	-webkit-animation-name: bigEntrance;	
+
+	animation-duration: 1.6s;	
+	-webkit-animation-duration: 1.6s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	visibility: visible !important;			
+}
+
+@keyframes bigEntrance {
+	0% {
+		transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+		opacity: 0.2;
+	}
+	30% {
+		transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);		
+		opacity: 1;
+	}
+	45% {
+		transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	60% {
+		transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	75% {
+		transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	100% {
+		transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}		
+}
+
+@-webkit-keyframes bigEntrance {
+	0% {
+		-webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+		opacity: 0.2;
+	}
+	30% {
+		-webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);		
+		opacity: 1;
+	}
+	45% {
+		-webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	60% {
+		-webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	75% {
+		-webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		-webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	100% {
+		-webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}				
+}
+
+/*
+
+/*
+==============================================
+slideDown
+==============================================
+*/
+
+
+.slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	50%{
+		-webkit-transform: translateY(8%);
+	}
+	65%{
+		-webkit-transform: translateY(-4%);
+	}
+	80%{
+		-webkit-transform: translateY(4%);
+	}
+	95%{
+		-webkit-transform: translateY(-2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+/*
+hatch
+==============================================
+*/
+
+.hatch{
+	animation-name: hatch;
+	-webkit-animation-name: hatch;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+
+	transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%; 
+
+	visibility: visible !important;		
+}
+
+@keyframes hatch {
+	0% {
+		transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		transform: rotate(-2deg);
+	}	
+	65% {
+		transform: rotate(1deg);
+	}	
+	80% {
+		transform: rotate(-1deg);
+	}		
+	100% {
+		transform: rotate(0deg);
+	}									
+}
+
+@-webkit-keyframes hatch {
+	0% {
+		-webkit-transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		-webkit-transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		-webkit-transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		-webkit-transform: rotate(-2deg);
+	}	
+	65% {
+		-webkit-transform: rotate(1deg);
+	}	
+	80% {
+		-webkit-transform: rotate(-1deg);
+	}		
+	100% {
+		-webkit-transform: rotate(0deg);
+	}		
+}
+
+
+/*/*
+==============================================
+expandUp
+==============================================
+*/
+
+
+.expandUp {
+	animation-name: expandUp;
+	-webkit-animation-name: expandUp;	
+
+	animation-duration: 0.7s;	
+	-webkit-animation-duration: 0.7s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;		
+
+	visibility: visible !important;	
+}
+
+@keyframes expandUp {
+	0% {
+		transform: translateY(100%) scale(0.6) scaleY(0.5);
+	}
+	60%{
+		transform: translateY(-7%) scaleY(1.12);
+	}
+	75%{
+		transform: translateY(3%);
+	}	
+	100% {
+		transform: translateY(0%) scale(1) scaleY(1);
+	}	
+}
+
+@-webkit-keyframes expandUp {
+	0% {
+		-webkit-transform: translateY(100%) scale(0.6) scaleY(0.5);
+	}
+	60%{
+		-webkit-transform: translateY(-7%) scaleY(1.12);
+	}
+	75%{
+		-webkit-transform: translateY(3%);
+	}	
+	100% {
+		-webkit-transform: translateY(0%) scale(1) scaleY(1);
+	}	
+}
+/*
+.z-index {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+*/
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	z-index: 100;
+	display: none;
+	}
+	.cnt223 a{
+	text-decoration: none;
+	}
+	.popup{
+	width: 100%;
+	margin: 0 auto;
+	display: none;
+	position: fixed;
+	z-index: 101;
+	}
+	.cnt223{
+	min-width: 600px;
+	width: 600px;
+	min-height: 150px;
+	margin: 100px auto;
+	background: #f3f3f3;
+	position: relative;
+	z-index: 103;
+	padding: 15px 35px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px #000;
+	}
+	.cnt223 p{
+	clear: both;
+		color: #555555;
+		/* text-align: justify; */
+		font-size: 20px;
+		font-family: sans-serif;
+	}
+	.cnt223 p a{
+	color: #d91900;
+	font-weight: bold;
+	}
+	.cnt223 .x{
+	float: right;
+	height: 35px;
+	left: 22px;
+	position: relative;
+	top: -25px;
+	width: 34px;
+	}
+	.cnt223 .x:hover{
+	cursor: pointer;
+	}
+
+/*<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8">
+    <title>Dune Theme Deck - Casual &amp; Multiplayer Formats - The Game - MTG Salvation Forums - MTG Salvation </title>
+    <meta name="description" content="I'm a huge fan of the Dune novels so I've been trying to make a Dune deck.
+If you've read all the novels then you'll get this. At first I wanted to encompas...">
+    <meta name="theme-color" content="#121212">
+
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+
+    
+        <link rel="shortcut icon" href="https://media-dominaria.cursecdn.com/avatars/48/232/635049949102615104.png">
+    
+
+    <!-- Links -->
+    <link rel="canonical" href="https://www.mtgsalvation.com/forums/the-game/casual-multiplayer-formats/159595-dune-theme-deck">
+
+    
+
+    <!-- Meta Properties -->
+    
+    
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/Content/1-0-254-0/Skins/Blocks/css/compiled.css">
+<link rel="stylesheet" href="/Content/1-0-254-0/Skins/MTGDark/css/compiled.css">
+<link rel="stylesheet" type="text/css" href="/api/custom-css">
+    
+
+    <script type="text/javascript" async="" src="https://sb.scorecardresearch.com/c2/6035118/cs.js"></script><script type="text/javascript" async="" src="//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/8371.js?428419"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/v1541614764654/recaptcha__en.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-KCWVPH"></script><script type="text/javascript">
+        var onloadCallback = function () {
+            Cobalt.runOnHtmlInsert(Cobalt.Forms.handlegReCaptchaRender);
+        };
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
+    <script src="https://apis.google.com/js/platform.js" gapi_processed="true"></script>
+
+    <!-- JavaScript -->
+    <script src="/js/jquery-migration?v=GjyiFSP641QXo5QcmpaUW1L8laD5rKWzPP0n7lEpHPo1"></script>
+
+    <script src="/js/jquery?v=Nv44zq5I_ixHAqW6w5vkGRvG8oTC3EafTHhdXOwlAoY1"></script>
+
+    <script src="/js/cobalt?v=BrjFXurvQEvxZ22O-G07_mFkZk1V0F-LyqADuHk8myA1"></script>
+
+    <script src="/js/dominaria?v=TiD9oPezocvdhVorwBJFwjqBt4l7pjB_CFlHSEoXhm81"></script>
+
+    
+    
+    
+
+
+ <script>
+//* Generate page variation
+var chosenVariation = Math.floor(Math.random() * 2);
+
+			window.factorem = window.factorem || {};
+			window.factorem.slotSizes =  [
+				[[728,90],[980,150],[980,250],[970,150],[970,250]],
+				[[300,250]],
+				[[300,250]],
+				[[728,90]],
+				[[728, 90]],
+				[[300,250]],
+				[],
+				[]
+
+			];
+/// Test
+
+var script = document.createElement('script');
+var tstamp = new Date();
+script.id = 'factorem';
+if (chosenVariation == 0) {
+script.src = '//cdm.cursecdn.com/js/dist/17.2.0-inview/cdmfactorem_min.js?misc=' + tstamp.getTime();
+script.async = true;
+} 
+else {
+script.src = '//cdm.cursecdn.com/js/dist/17.2.0-inview/cdmfactorem_min.js?misc=' + tstamp.getTime();
+script.async = true;
+}
+script.type='text/javascript';
+document.head.appendChild(script);
+</script><script id="factorem" src="//cdm.cursecdn.com/js/dist/17.2.0-inview/cdmfactorem_min.js?misc=1542309738783" async="" type="text/javascript"></script> 
+
+/*
+<script src="//cdm.cursecdn.com/js/prebid/prebid-1.13.0.js" async=""></script><script src="//c.amazon-adsystem.com/aax2/apstag.js" async=""></script><script src="//www.googletagservices.com/tag/js/gpt.js" async=""></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.mtgsalvation.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.mtgsalvation.com"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_275.js" async=""></script><script src="//www.mtgsalvation.com/cards/judgment/9357/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/judgment/9357-tunneler-wurm"></script><script src="//www.mtgsalvation.com/cards/time-spiral/13243/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/time-spiral/13243-wurmcalling"></script><script src="//www.mtgsalvation.com/cards/duel-decks-mind-vs-might/32112/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/duel-decks-mind-vs-might/32112-roar-of-the-wurm"></script><script src="//www.mtgsalvation.com/cards/judgment/9257/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/judgment/9257-crush-of-wurms"></script><script src="//www.mtgsalvation.com/cards/planechase-anthology/33496/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/planechase-anthology/33496-exotic-orchard"></script><script src="//www.mtgsalvation.com/cards/planeshift/8135/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/planeshift/8135-forsaken-city"></script><script src="//www.mtgsalvation.com/cards/battlebond/34773/tooltip?callback=window.CurseTips
+['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/battlebond/34773-assassinate"></script><script src="//www.mtgsalvation.com/cards/vintage-masters/23116/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/vintage-masters/23116-choking-sands"></script><script src="//www.mtgsalvation.com/cards/legends/1689/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/legends/1689-wall-of-earth"></script><script src="//www.mtgsalvation.com/cards/fourth-edition/2362/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/fourth-edition/2362-wall-of-dust"></script><script src="//www.mtgsalvation.com/cards/eighth-edition/10352/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/eighth-edition/10352-wall-of-stone"></script><script src="//www.mtgsalvation.com/cards/battle-royale-box-set/7307/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/battle-royale-box-set/7307-wall-of-heat"></script><script src="//www.mtgsalvation.com/cards/tenth-edition/13717/tooltip?callback=window.CurseTips['dominaria-tooltip'].handleTooltipData" data-tooltip-href="https://www.mtgsalvation.com/cards/tenth-edition/13717-agonizing-memories"></script></head>
+*/
+
+/****************** Animation Delay Formula: **********************88***/
+
+
+/*
+div {
+   position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+
+#robot01 {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+#johnny01 {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+
+#johnny01 {
+    position: relative;
+   animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+#robotools01 {
+    position: relative;
+animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+#keleton03 {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+
+#sentinel03 {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+
+#onslaught08 {
+    position: relative;
+
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 16s;
+}
+
+
+/*<div class='angrytext' >Animation</div>
+
+div.angrytext {
+    font-size:70px;
+    font-weight:bold;
+    color:#4794D3;
+    width:300px;
+    margin:90px auto;
+   
+    -webkit-animation: appear 3s ease 0s infinite normal ;
+    animation: appear 3s ease 0s infinite normal ;
+   }
+   
+   @-webkit-keyframes appear {
+     0%{
+       opacity: 0;
+       -webkit-transform: scale3d(0.3, 0.3, 0.3);
+       transform: scale3d(0.3, 0.3, 0.3);
+     }
+     60%{
+       opacity: 1;
+       -webkit-transform: scale3d(1,1,1);
+       transform: scale3d(1,1,1);
+     }
+   }
+   
+   @keyframes appear {
+     0%{
+       opacity: 0;
+       transform: scale3d(0.3, 0.3, 0.3);
+     }
+     60%{
+       opacity: 1;
+       transform: scale3d(1,1,1);
+     }
+   }
+
+
+*/
